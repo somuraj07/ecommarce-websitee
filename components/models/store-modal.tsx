@@ -30,7 +30,7 @@ const onSubmit = async (values:z.infer<typeof formSchema>)=>{
   try {
     setLoading(true);
     const response = await axios.post('/api/stores',values);
-    toast.success("stored created .");
+    window.location.assign(`/${response.data.id}`);
   } catch (error) {
 toast.error("something went wrong");
   } finally{
