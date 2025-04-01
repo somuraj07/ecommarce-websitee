@@ -20,7 +20,7 @@ const storeModel = useStoreModal();
 
     return(
         <div>
-            store swith
+            store swither
         </div>
     );
 };
